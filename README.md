@@ -31,6 +31,7 @@ Options:
 - `par2` files are stored along the data. This is something I personally want, but I plan to implement option to store them in a separate location. 
 - No way to clean up backups left after `repair`
 - No way to clean up orphaned `par2` files.
+- `--verify` checks only the status of data files, it does not detect if the parity files are damaged.
 - Tests cover only happy paths.
 - Note that `par2cmdline` is already multithreaded, running this tool with large `-p` value on large files might needlessly overload your machine.
 
